@@ -27,6 +27,7 @@ assets/
 - VS Code 
 
 👤 Autor
+
 Desenvolvido por **Samuel Falcão**  
 🎓 Técnico em Informática e estudante de Desenvolvimento de Sistemas
 📫 [linkedin.com/in/seu-perfil](https://www.linkedin.com/in/samuelfalc%C3%A3o/)
