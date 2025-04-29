@@ -3,9 +3,11 @@
 Um aplicativo de quiz interativo desenvolvido com **Flutter**, com foco em astronomia e no Sistema Solar.
 
 🧠 Sobre o Projeto
+
 Este app apresenta uma série de perguntas de múltipla escolha sobre o Sistema Solar. Ele foi desenvolvido como parte de um projeto técnico educacional, com o objetivo de reforçar conhecimentos sobre Flutter, lógica de programação e boas práticas no desenvolvimento mobile.
 
 🎮 Funcionalidades
+
 ✅ Perguntas e respostas com múltipla escolha  
 ✅ Contagem de acertos ao final do quiz  
 ✅ Interface simples, intuitiva e responsiva  
