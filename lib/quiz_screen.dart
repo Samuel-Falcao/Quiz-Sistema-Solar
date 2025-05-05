@@ -39,14 +39,18 @@ class _QuizScreenState extends State<QuizScreen> {
       setState(() {
         currentQuestion++;
         seconds = 30;
-        _controller.nextPage(duration: Duration(milliseconds: 300), curve: Curves.easeIn);
+        _controller.nextPage(
+          duration: Duration(milliseconds: 300),
+          curve: Curves.easeIn,
+        );
       });
     } else {
       _timer?.cancel();
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => ResultScreen(score: score, total: questions.length),
+          builder: (context) =>
+              ResultScreen(score: score, total: questions.length),
         ),
       );
     }
@@ -106,10 +110,15 @@ class _QuizScreenState extends State<QuizScreen> {
                       ),
                       SizedBox(height: 20),
                       ...question.options.map((option) {
-                        return ElevatedButton(
-                          onPressed: () => answerQuestion(option == question.answer),
-                          child: Text(option),
-                          style: ElevatedButton.styleFrom(minimumSize: Size.fromHeight(50)),
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 12.0), // Espaçamento entre botões
+                          child: ElevatedButton(
+                            onPressed: () => answerQuestion(option == question.answer),
+                            child: Text(option),
+                            style: ElevatedButton.styleFrom(
+                              minimumSize: Size.fromHeight(50),
+                            ),
+                          ),
                         );
                       }).toList(),
                     ],
